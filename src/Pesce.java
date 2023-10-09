@@ -12,5 +12,9 @@ public class Pesce {
         return specie;
     }
 
+    public Pesce clone() {
+        return new Pesce(this.specie);
+    }
+
 
 }
