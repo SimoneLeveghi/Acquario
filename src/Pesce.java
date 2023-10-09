@@ -7,4 +7,10 @@ public class Pesce {
         this.specie = specie;
         this.id = maxId++;
     }
+
+    public String getSpecie() {
+        return specie;
+    }
+
+
 }
