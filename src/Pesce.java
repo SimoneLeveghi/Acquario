@@ -16,5 +16,11 @@ public class Pesce {
         return new Pesce(this.specie);
     }
 
-
+    public String toString() {
+        return "{" +
+                "\"specie\":\"" + this.specie + "," +
+                "\"id\":" + this.id + "," +
+                "\"maxId\":" + Pesce.maxId +
+                "}";
+    }
 }
