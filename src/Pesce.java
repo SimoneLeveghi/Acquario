@@ -12,6 +12,10 @@ public class Pesce {
         return specie;
     }
 
+    public int getId() {
+        return this.id;
+    }
+
     public Pesce clone() {
         return new Pesce(this.specie);
     }
