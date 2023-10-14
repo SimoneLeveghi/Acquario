@@ -41,4 +41,10 @@ public class Acquario {
 
         return -1;
     }
+
+    public Pesce removePesce(int index) {
+        Pesce p = this.pesci[index];
+        this.pesci[index] = null;
+        return p;
+    }
 }
