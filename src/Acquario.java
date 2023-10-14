@@ -63,4 +63,19 @@ public class Acquario {
     public Acquario clone() {
         return new Acquario(this.pesci);
     }
+
+    public String toString() {
+        String ret = "{" +
+                "\"pesci\"=" +
+                "[";
+        for(Pesce p : this.pesci) {
+            ret += (p != null? p.toString() : "null") + ",";
+        }
+
+        ret += "\b]," +
+                "\"id\"=" + this.id +
+                "}";
+
+        return ret;
+    }
 }
