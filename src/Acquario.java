@@ -17,4 +17,10 @@ public class Acquario {
         this.pesci = new Pesce[nPesci];
         this.id = maxId++;
     }
+
+    public Pesce getPesce(int index) {
+        return this.pesci[index] != null? this.pesci[index].clone() : null;
+    }
+
+
 }
