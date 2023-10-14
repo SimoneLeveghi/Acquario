@@ -22,5 +22,7 @@ public class Acquario {
         return this.pesci[index] != null? this.pesci[index].clone() : null;
     }
 
-
+    public void setPesce(int index, Pesce pesce) {
+        this.pesci[index] = pesce != null? pesce.clone() : null;
+    }
 }
