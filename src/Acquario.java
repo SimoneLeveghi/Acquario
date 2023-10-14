@@ -47,4 +47,14 @@ public class Acquario {
         this.pesci[index] = null;
         return p;
     }
+
+    public Pesce removePesceById(int id) {
+        for(int i = 0; i < this.pesci.length; ++i) {
+            if(this.pesci[i] != null && this.pesci[i].getId() == id) {
+                return removePesce(i);
+            }
+        }
+
+        return null;
+    }
 }
