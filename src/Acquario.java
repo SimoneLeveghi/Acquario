@@ -12,4 +12,9 @@ public class Acquario {
 
         this.id = maxId++;
     }
+
+    public Acquario(int nPesci) {
+        this.pesci = new Pesce[nPesci];
+        this.id = maxId++;
+    }
 }
