@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Acquario {
     private Pesce[] pesci;
     private int id;
@@ -56,5 +58,9 @@ public class Acquario {
         }
 
         return null;
+    }
+
+    public Acquario clone() {
+        return new Acquario(this.pesci);
     }
 }
