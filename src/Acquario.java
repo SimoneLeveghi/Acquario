@@ -20,6 +20,10 @@ public class Acquario {
         this.id = maxId++;
     }
 
+    public Acquario(Acquario acquario) {
+        this(acquario.pesci);
+    }
+
     public Pesce getPesce(int index) {
         return this.pesci[index] != null? this.pesci[index].clone() : null;
     }
